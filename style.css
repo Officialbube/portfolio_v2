@@ -347,7 +347,7 @@ footer{
     margin-top: 30px;
     color: #b9b9b9;
 }
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 720px){
     html,body{
         width: 100%;
     }
