@@ -349,7 +349,7 @@ footer{
 }
 @media only screen and (max-width: 720px){
     html,body{
-        width: 100%;
+        width: 90%;
     }
     header{
         width: 100%;
