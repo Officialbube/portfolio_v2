@@ -332,6 +332,10 @@ footer{
     padding: 200px 0 30px;
     text-align: center;
 }
+.footer-container{
+    display: grid;
+    place-items: center;
+}
 .footer-text1{
     font-size: 48px;
     font-weight: 900;
@@ -349,7 +353,7 @@ footer{
 }
 @media only screen and (max-width: 720px){
     html,body{
-        width: 90%;
+        width: 100%;
     }
     header{
         width: 100%;
