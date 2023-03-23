@@ -374,10 +374,14 @@ footer{
         text-align: center;
         border: 1px solid;
         width: 100%;
+        height: 300px;
     }
     .left h1{
         text-align: center;
         font-size: 2.5rem;
+    }
+    .left p{
+        font-size: 1.3rem;
     }
     .right{
         width: 100%;
