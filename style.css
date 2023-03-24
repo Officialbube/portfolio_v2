@@ -352,6 +352,14 @@ footer{
     font-size: 20px;
     margin-bottom: 150px;
 }
+.footer-container nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+.footer-container nav a{
+    color: #ffffff;
+}
 .copy{
     font-family: 'Noto Serif', serif;
     font-size: 16px;
