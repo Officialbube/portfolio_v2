@@ -466,6 +466,11 @@ footer{
         width: 100%;
         margin-top: 80px;
     }
+    .btn{
+        font-size: 1rem;
+        width: 7.5rem;
+        padding: 7px;
+    }
     .footer-text1{
         font-size: 25px;
     }
