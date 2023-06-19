@@ -70,7 +70,8 @@ a {
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  
+  background-color: transparent;
+  border: none;
   height: 35px;
   width: 40px;
   row-gap: 5px;
@@ -79,13 +80,17 @@ a {
 .burger span {
   background-color: #ffffff;
   height: 2px;
-  width: 100%;
+  
   align-items: left;
 }
-.burger span:nth-child(1) {
+.line1 {
   width: 80%;
+  
 }
-.burger span:nth-child(3) {
+.line2 {
+  width: 100%;
+}
+.line3 {
   width: 50%;
 }
 main {
@@ -126,7 +131,7 @@ svg {
 }
 .left span {
   font-size: 27px;
-  font-weight: 900;
+  font-weight: 600;
 }
 .right {
   width: 100%;
@@ -360,6 +365,11 @@ footer {
   margin-top: 30px;
   color: #b9b9b9;
 }
+
+.show{
+  display: block;
+}
+
 @media only screen and (max-width: 768px) {
   html,
   body {
@@ -371,6 +381,9 @@ footer {
   }
   .nav {
     display: none;
+  }
+  .show-menu{
+    display: block;
   }
   .burger {
     display: flex;
