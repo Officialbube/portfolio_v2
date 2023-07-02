@@ -15,19 +15,19 @@
 <body>
     <header class="header">
         <div class="header-container container">
-            <p class="logo">LOGO</p>
+            <p class="logo">EBUBE</p>
             <nav class="nav">
                 
-                <a href="#projects" >My Projects</a>
+                <a href="" >My Projects</a>
                 <a href="#about" >About Me</a>
                 <a href="#contact" >Contact Me</a>
                 <a href="#resume">My Resume</a>
             </nav>
-            <button class="burger" id="burger" onclick="burger()">
+            <div class="burger" id="burger" onclick="showNav()">
                 <span class="line1"></span>
                 <span class="line2"></span>
                 <span class="line3"></span>
-            </button>
+            </div>
         </div>
     </header>
     <main>
@@ -48,7 +48,7 @@
             <section class="story container" id="about">
                 
                     <h3>MY STORY</h3>
-                    <div class="story-details">
+                    <div class="story-details" id="#about">
                         <p>Hello! My name is Ebube, I enjoy converting ideas into real life products and building solutions that runs on the internet. Over the last 2 years, i've developed products for businesses around the world, providing solutions on small business websites to enteprise web applications with focus on quality, accessibility and fast user experiences.</p>
                         <p>I have had the great priviledge to work as a Frontend engineer for a Musical agency, an event organizing agency, a finance solution, internal management applications and others. Fast-Forward to today, I work as the Frontend engineer at Genesys, building an accessible digital experience to connect students with businesses that require their services.</p>
                         <p>I believe giving is receiving, so I give back to the Tech ecosystem by building the community, Techers, where individuals building a career in the Tech space support eachother and I share software development articles & resources on my online platforms.</p>
@@ -130,7 +130,7 @@
                             <label for="">Message</label>
                             <textarea name="" id=""></textarea>
                         </div>
-                        <button class="btn">Send message</button>
+                        <button class="btn" >Send message</button>
                     </form>
                 </div>
             </section>
@@ -154,7 +154,18 @@
     </footer>
     <script scr="/script007.js"></script> 
     <script>
-        
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav');
+        const line1 = document.querySelector('.line1');
+        const line2 = document.querySelector('.line2');
+        const line3 = document.querySelector('.line3');
+
+        function showNav(){
+            line1.classList.toggle('rotate1');
+            line2.classList.toggle('rotate2');
+            line3.classList.toggle('rotate3');
+            nav.classList.toggle('show-nav');
+        }
     </script> 
 </body>
 </html>
