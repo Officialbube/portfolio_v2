@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +42,7 @@ a {
 .logo {
   font-size: 1.5rem;
   z-index: 10;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Pacifico', cursive;
   
 }
 nav {
