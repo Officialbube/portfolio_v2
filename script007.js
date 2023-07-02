@@ -1,5 +1,5 @@
-const burg = document.querySelector('.burger');
-        function burger(){
-            alert("hello!")
-            console.log("hello")
-        }
+const burg = document.querySelector('#burger');
+function press(){
+    
+    console.log("hello")
+}
