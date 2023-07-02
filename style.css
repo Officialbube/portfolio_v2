@@ -32,18 +32,21 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 2rem;
   padding: 0 2rem;
 }
 .header-container p{
   margin-bottom: 0;
 }
 .logo {
-  font-size: 32px;
+  font-size: 1.5rem;
+  z-index: 10;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
 }
 nav {
   display: flex;
-  column-gap: 50px;
+  column-gap: 3.12rem;
 }
 .nav a {
   color: #ffffff;
@@ -104,8 +107,8 @@ svg {
 .hero {
   width: 100%;
   display: flex;
-  column-gap: 40px;
-  margin-top: 100px;
+  column-gap: 2.5rem;
+  margin-top: 6.25rem;
   padding: 0 2rem;
 }
 .left {
@@ -114,7 +117,7 @@ svg {
   width: 100%;
   justify-content: center;
 
-  height: 550px;
+  height: 34rem;
   text-align: left;
   line-height: 40px;
 }
@@ -130,7 +133,7 @@ svg {
   font-weight: 300;
 }
 .left span {
-  font-size: 27px;
+  font-size: 1.68rem;
   font-weight: 600;
 }
 .right {
@@ -142,74 +145,74 @@ svg {
 
 
 .top1 span {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 300;
   font-family: "Noto Serif", serif;
   width: 40rem;
   text-align: center;
 }
 .top1 p {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-family: "Noto Serif", serif;
   text-align: center;
 }
 .top2 span {
-  font-size: 30px;
+  font-size: 1.87rem;
 }
 .top2 p {
-  font-size: 30px;
+  font-size: 1.87rem;
 }
 .bottom1 span {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 300;
   font-family: "Noto Serif", serif;
 
   text-align: center;
 }
 .bottom1 p {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-family: "Noto Serif", serif;
   text-align: center;
 }
 .bottom2 span {
-  font-size: 30px;
+  font-size: 1.87rem;
 }
 .bottom2 p {
-  font-size: 30px;
+  font-size: 1.87rem;
 }
 .vertical {
   border-left: 1px solid #fff;
-  height: 200px;
+  height: 12.5rem;
   left: 50%;
-  margin: 100px 0;
+  margin: 6.25rem 0;
 }
 .story {
   display: flex;
   padding: 0 2rem;
-  padding-top: 150px;
-  column-gap: 100px;
+  padding-top: 9.37rem;
+  column-gap: 6.25rem;
 }
 .story h3 {
   font-size: calc(1.3rem + 0.6vw);
-  line-height: 40px;
+  line-height: 2.5rem;
   font-weight: 600;
   font-family: "Noto Serif", serif;
   color: #b9b9b9;
 }
 .story p {
-  margin-bottom: 30px;
-  font-size: 24px;
+  margin-bottom: 1.87rem;
+  font-size: 1.5rem;
 }
 .projects{
   padding: 2rem;
 }
 .project-header span {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
   font-family: "Noto Serif", serif;
 }
 .project-header p {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 100;
   color: #b9b9b9;
 }
@@ -366,9 +369,25 @@ footer {
   color: #b9b9b9;
 }
 
-.show{
-  display: block;
+.rotate1{
+  transform: rotate(45deg) translate(5px , 6px);
+  transition: 1s ease;
+  width: 100%;
 }
+.rotate2{
+  display: none;
+}
+.rotate3{
+  transform: rotate(-45deg) translate(-1px , -1px);
+  transition: 1s ease;
+  width: 100%;
+}
+.show-nav{
+  transform: translateY(-1000%);
+}
+
+
+
 
 @media only screen and (max-width: 768px) {
   html,
@@ -382,11 +401,28 @@ footer {
   .nav {
     display: none;
   }
-  .show-menu{
-    display: block;
+  .show-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000000d3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(0%);
+    transition: all 3s ease;
+  }
+  .show-nav a{
+    animation: animate 1s;
+    font-size: 1.5rem;
+    
   }
   .burger {
     display: flex;
+    z-index: 50;
   }
   .hero {
     display: block;
@@ -473,6 +509,10 @@ footer {
     width: 100%;
     margin-top: 80px;
   }
+  .contact-link p{
+    display: flex;
+    column-gap: 0.5rem;
+  }
   .btn {
     font-size: 1rem;
     width: 7.5rem;
@@ -496,5 +536,16 @@ footer {
 @media only screen and (max-width: 1400px) {
   .hero {
     margin-top: 75px 0 150px;
+  }
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: translateY(2em);
+  }
+  100%{
+    opacity: 1;
+
   }
 }
