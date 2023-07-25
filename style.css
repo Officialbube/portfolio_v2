@@ -415,7 +415,7 @@ footer {
   transform: translateY(-1000%);
 }
 .hide-left{
-  transform: translateX(-200%);
+  transform: translateX(-210%);
 }
 .hide-right{
   transform: translateX(200%);
