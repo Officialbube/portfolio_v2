@@ -1,181 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/075019fa93.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/075019fa93.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/framer-motion@10.12.16/dist/framer-motion.min.js"></script>
-    
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
-</head>
-<body>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  </head>
+  <body>
     <header class="header">
-        <div class="header-container container">
-            <p class="logo">BUBE</p>
-            <nav class="nav">
-                
-                <a href="" >My Projects</a>
-                <a href="#about" >About Me</a>
-                <a href="#contact" >Contact Me</a>
-                <a href="#resume">My Resume</a>
-            </nav>
-            <div class="burger" id="burger" onclick="showNav()">
-                <span class="line1"></span>
-                <span class="line2"></span>
-                <span class="line3"></span>
-            </div>
+      <div class="header-container container">
+        <p class="logo">BUBE</p>
+        <nav class="nav">
+          <a href="#">My Projects</a>
+          <a href="#about">About Me</a>
+          <a href="#contact">Contact Me</a>
+          <a href="#resume">My Resume</a>
+        </nav>
+        <div class="burger" id="burger" onclick="showNav()">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
         </div>
+      </div>
     </header>
     <main>
-        
-        <article>
-            <section class="hero container">
-                <div class="left">
-                    <h1>Ebube N.E</h1>
-                    <p>I'm a creative <span>Frontend Developer</span>
-                    passionate about converting ideas into standard and 
-                    scalable products.</p>
-                </div>
-                <div class="right">
-                    <img src="/assets/images/myPic.jpg" alt="">
-                </div>
-            </section>
-            
-            <section class="story container" id="about">
-                
-                    <h3>MY STORY</h3>
-                    <div class="story-details" id="#about">
-                        <p>Hello! My name is Ebube, I enjoy converting ideas into real life products and building solutions that runs on the internet. Over the last 2 years, i've developed products for businesses around the world, providing solutions on small business websites to enteprise web applications with focus on quality, accessibility and fast user experiences.</p>
-                        <p>I have had the great priviledge to work on many projects. Fast-Forward to today, I work as the Frontend engineer at Genesys, building an accessible digital experience to connect students with businesses that require their services.</p>
-                        <p>I believe giving is receiving, so I want to give back to the Tech ecosystem by building a community where individuals building a career in the Tech space support eachother and I share software development articles & resources on my online platforms.</p>
-                        <p>What I work with :
-                            <span>Languages: Html, Css, Javascript.</span>
-                            <span>Technologies: React.js, Tailwind, Git, Netlify, Vercel.</span>
-                        </p>
-                    </div>
-                    
-                
-            </section>
-            <section class="projects container" id="projects">
-                <div class="projects-container">
-                    <div>
-                        <div class="project-header">
-                            <span>My Projects</span>
-                            <p>Each one is unique. Take a look.</p>
-                        </div>
-                        <div>
-                            <div class="work-container">
-                                <div class="work-image">
-                                    <div>
-                                        <a href="" class="image-link">
-                                            <div class="pc-view-cont">
-                                                <img src="/assets/images/mobile.png" alt="" class="project-image pc-view">
-                                            </div>
-                                            <div class="mobile-view-cont">
-                                                <img src="/assets/images/mobile (1).png" class="mobile-view" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="work-text">
-                                    <div class="top-work-text">
-                                        <p class="number">01</p>
-                                        <p class="work-title">
-                                            <a href="">Artsy</a>
-                                        </p>
-                                        <span class="work-details">
-                                            An online art marketplace where users can purchase historical and top art, 
-                                            as well as auction and perform live feeds. 
-                                            The website features a wide variety of art from different time periods and cultures, 
-                                            and it offers a variety of payment options and shipping methods. 
-                                            Users can also create an account to save their favorite pieces of art and track their bidding 
-                                            history. The website is designed to be user-friendly and easy to navigate. 
-                                            
-                                        </span>
-                                        <p class="stack"><span>Tools :</span> React js, Tailwind css, Framer motion.</p>
-                                    </div>
-                                    <span class="work-link-container">
-                                        <a href="" class="work-link">
-                                            <img src="/assets/logo/outline_open_in_new_white_24dp.png" alt="">
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="contact container" id="contact">
-                <div class="contact-text">
-                    <h2>Get In Touch!</h2>
-                    <p>I’m currently open to joining a new team of creative developers. Also, if you have a question, proposal, idea or just want to say hi, Go ahead.</p>
-                </div>
-                <div class="contact-form">
-                    <div class="contact-link">
-                        <p><i class="fa fa-location-dot icon-color"></i>Nigeria</p>
-                        <p><i class="fa fa-phone icon-color"></i>+2348144961356</p>
-                        <p><i class="fa fa-envelope icon-color"></i>ebubenkereebube@gmail.com</p>
-                    </div>
-                    <form action="">
-                        <div class="input-top">
-                            <div class="name-container">
-                                <label for="">Name</label>
-                                <input type="text">
-                            </div>
-                            <div class="email-container">
-                                <label for="">Email address</label>
-                                <input type="email">
-                            </div>
-                        </div>
-                        
-                        <div class="input-middle">
-                            <label for="">Subject</label>
-                            <input type="text">
-                        </div>
-                        <div class="input-bottom">
-                            <label for="">Message</label>
-                            <textarea name="" id=""></textarea>
-                        </div>
-                        <button class="btn" >Send message</button>
-                    </form>
-                </div>
-            </section>
-        </article>
-        
-    </main>
-    
-    <footer class="footer container">
-        <div class="footer-container">
-            <p class="footer-text1">Don't be a stranger!🤙</p>
-            <p class="footer-text2">Let's connect, let's chat</p>
-            <nav>
-                <a href="https://github.com/Officialbube"><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                
-            </nav>
-            <p class="copy">© Copyright - Ebube N.E 2023</p>
-            
-        </div>
-    </footer>
-    <script scr="/script007.js"></script> 
-    <script>
-        const burger = document.querySelector('.burger');
-        const nav = document.querySelector('.nav');
-        const line1 = document.querySelector('.line1');
-        const line2 = document.querySelector('.line2');
-        const line3 = document.querySelector('.line3');
+      <article>
+        <section class="hero container">
+          <div class="left">
+            <h1>Ebube N.E</h1>
+            <p>
+              I'm a creative <span>Frontend Developer</span> passionate about
+              converting ideas into standard and scalable products.
+            </p>
+          </div>
+          <div class="right">
+            <img src="/assets/images/myPic.jpg" alt="" />
+          </div>
+        </section>
 
-        function showNav(){
-            line1.classList.toggle('rotate1');
-            line2.classList.toggle('rotate2');
-            line3.classList.toggle('rotate3');
-            nav.classList.toggle('show-nav');
-        }
-    </script> 
-</body>
+        <section class="story container " id="about">
+          <h3>MY STORY</h3>
+          <div class="story-details" id="#about">
+            <p>
+              Hello! My name is Ebube, I enjoy converting ideas into real life
+              products and building solutions that runs on the internet. Over
+              the last 2 years, i've developed products for businesses around
+              the world, providing solutions on small business websites to
+              enteprise web applications with focus on quality, accessibility
+              and fast user experiences.
+            </p>
+            <p>
+              I have had the great priviledge to work on many projects.
+              Fast-Forward to today, I work as the Frontend engineer at Genesys,
+              building an accessible digital experience to connect students with
+              businesses that require their services.
+            </p>
+            <p>
+              I believe giving is receiving, so I want to give back to the Tech
+              ecosystem by building a community where individuals building a
+              career in the Tech space support eachother and I share software
+              development articles & resources on my online platforms.
+            </p>
+            <p>
+              What I work with :
+              <span>Languages: Html, Css, Javascript.</span>
+              <span
+                >Technologies: React.js, Tailwind, Git, Netlify, Vercel.</span
+              >
+            </p>
+          </div>
+        </section>
+        <section class="projects container" id="projects">
+          <div class="projects-container">
+            <div>
+              <div class="project-header">
+                <span>My Projects</span>
+                <p>Each one is unique. Take a look.</p>
+              </div>
+              <div>
+                <div class="work-container">
+                  <div class="work-image">
+                    <div>
+                      <a href="" class="image-link">
+                        <div class="pc-view-cont">
+                          <img
+                            src="/assets/images/mobile.png"
+                            alt=""
+                            class="project-image pc-view"
+                          />
+                        </div>
+                        <div class="mobile-view-cont">
+                          <img
+                            src="/assets/images/mobile (1).png"
+                            class="mobile-view"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="work-text">
+                    <div class="top-work-text">
+                      <p class="number">01</p>
+                      <p class="work-title">
+                        <a href="">Artsy</a>
+                      </p>
+                      <span class="work-details">
+                        An online art marketplace where users can purchase
+                        historical and top art, as well as auction and perform
+                        live feeds. The website features a wide variety of art
+                        from different time periods and cultures, and it offers
+                        a variety of payment options and shipping methods. Users
+                        can also create an account to save their favorite pieces
+                        of art and track their bidding history. The website is
+                        designed to be user-friendly and easy to navigate.
+                      </span>
+                      <p class="stack">
+                        <span>Tools :</span> React js, Tailwind css, Framer
+                        motion.
+                      </p>
+                    </div>
+                    <span class="work-link-container">
+                      <a href="" class="work-link">
+                        <img
+                          src="/assets/logo/outline_open_in_new_white_24dp.png"
+                          alt=""
+                        />
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact container" id="contact">
+          <div class="contact-text">
+            <h2>Get In Touch!</h2>
+            <p>
+              I’m currently open to joining a new team of creative developers.
+              Also, if you have a question, proposal, idea or just want to say
+              hi, Go ahead.
+            </p>
+          </div>
+          <div class="contact-form">
+            <div class="contact-link">
+              <p><i class="fa fa-location-dot icon-color"></i>Nigeria</p>
+              <p><i class="fa fa-phone icon-color"></i>+2348144961356</p>
+              <p>
+                <i class="fa fa-envelope icon-color"></i
+                >ebubenkereebube@gmail.com
+              </p>
+            </div>
+            <form action="">
+              <div class="input-top">
+                <div class="name-container">
+                  <label for="">Name</label>
+                  <input type="text" />
+                </div>
+                <div class="email-container">
+                  <label for="">Email address</label>
+                  <input type="email" />
+                </div>
+              </div>
+
+              <div class="input-middle">
+                <label for="">Subject</label>
+                <input type="text" />
+              </div>
+              <div class="input-bottom">
+                <label for="">Message</label>
+                <textarea name="" id=""></textarea>
+              </div>
+              <button class="btn">Send message</button>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer-container">
+        <p class="footer-text1">Don't be a stranger!🤙</p>
+        <p class="footer-text2">Let's connect, let's chat</p>
+        <nav>
+          <a href="https://github.com/Officialbube"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+        <p class="copy">© Copyright - Ebube N.E 2023</p>
+      </div>
+    </footer>
+    <script scr="/script007.js"></script>
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav");
+      const line1 = document.querySelector(".line1");
+      const line2 = document.querySelector(".line2");
+      const line3 = document.querySelector(".line3");
+
+      function showNav() {
+        line1.classList.toggle("rotate1");
+        line2.classList.toggle("rotate2");
+        line3.classList.toggle("rotate3");
+        nav.classList.toggle("show-nav");
+      }
+
+      
+    </script>
+  </body>
 </html>
