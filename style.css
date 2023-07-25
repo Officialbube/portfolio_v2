@@ -24,6 +24,7 @@ a {
 }
 .header {
   position: fixed;
+  z-index: 5;
   width: 100%;
   top: 0;
   backdrop-filter: blur(5px);
@@ -223,12 +224,26 @@ svg {
 }
 .work-image {
   width: 58.33%;
+  position: relative;
 }
 .image-link {
   width: 100%;
 }
-.work-image span {
+.work-image div {
   width: 100%;
+}
+.work-image a{
+  position: relative;
+}
+.project-image{
+  width: 90%;
+}
+
+.mobile-view{
+  position: absolute;
+  top: 3rem;
+  left: 30rem;
+  height: 100%;
 }
 .image {
   width: 100%;
@@ -258,6 +273,15 @@ svg {
   font-size: 1.2rem;
   color: #b9b9b9;
   line-height: 1.5rem;
+}
+.stack{
+  margin-top: 1rem;
+  
+}
+.stack span{
+  
+  font-weight: 600;
+  color: #ffffff;
 }
 .contact{
   padding: 2rem;
@@ -524,10 +548,17 @@ footer {
   }
 }
 @media only screen and (max-width: 1023px) {
+  .mobile-view{
+    top: 1rem;
+    left: 12rem;
+  }
+}
+@media only screen and (max-width: 1023px) {
   .header-container {
     display: flex;
     align-items: center;
   }
+  
 }
 @media only screen and (max-width: 1200px) {
   .hero {
