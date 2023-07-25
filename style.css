@@ -418,7 +418,7 @@ footer {
   transform: translateX(-210%);
 }
 .hide-right{
-  transform: translateX(200%);
+  transform: translateX(210%);
 }
 .hide-left, .hide-right{
   transition: transform 0.9s;
