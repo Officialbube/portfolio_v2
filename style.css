@@ -116,7 +116,7 @@ svg {
 .left {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   justify-content: center;
 
   height: 34rem;
@@ -139,9 +139,7 @@ svg {
   font-weight: 600;
 }
 .right {
-  width: 100%;
-  animation: opacity-animation 9s linear infinite;
-  animation-iteration-count: 1;
+  width: 50%;
 }
 .right img {
   width: 100%;
@@ -237,7 +235,7 @@ svg {
 .project-image {
   width: 90%;
 }
-.pc-view-cont{
+.pc-view-cont {
   display: hidden;
 }
 
@@ -252,7 +250,6 @@ svg {
   height: 100%;
   position: relative;
   right: 0;
-  
 }
 .image {
   width: 100%;
@@ -417,13 +414,22 @@ footer {
 .show-nav {
   transform: translateY(-1000%);
 }
-.item {
-  opacity: 0;
-  animation: scroll-animation 7s linear;
+.hide-left{
+  transform: translateX(-200%);
 }
+.hide-right{
+  transform: translateX(200%);
+}
+.hide-left, .hide-right{
+  transition: transform 0.9s;
+}
+.show-item{
+  transform: translate(0);
+}
+
+
 @media only screen and (max-width: 400px) {
-  
-  .mobile-view{
+  .mobile-view {
     left: 0;
   }
 }
@@ -486,6 +492,8 @@ footer {
     place-items: center;
     height: 250px;
     overflow: hidden;
+    animation: opacity-animation 9s linear infinite;
+    animation-iteration-count: 1;
   }
   .right img {
     width: 70%;
@@ -563,7 +571,6 @@ footer {
   }
 }
 @media only screen and (max-width: 1023px) {
-  
 }
 @media only screen and (max-width: 1023px) {
   .header-container {
@@ -600,5 +607,3 @@ footer {
     opacity: 1;
   }
 }
-
-

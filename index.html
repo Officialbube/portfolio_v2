@@ -33,22 +33,22 @@
     </header>
     <main>
       <article>
-        <section class="hero container">
-          <div class="left">
+        <section class="hero container hide">
+          <div class="left hide-left">
             <h1>Ebube N.E</h1>
             <p>
               I'm a creative <span>Frontend Developer</span> passionate about
               converting ideas into standard and scalable products.
             </p>
           </div>
-          <div class="right">
+          <div class="right hide-right">
             <img src="/assets/images/myPic.jpg" alt="" />
           </div>
         </section>
 
-        <section class="story container " id="about">
-          <h3>MY STORY</h3>
-          <div class="story-details" id="#about">
+        <section class="story container hide" id="about">
+          <h3 class="hide-left">MY STORY</h3>
+          <div class="story-details hide-right" id="#about">
             <p>
               Hello! My name is Ebube, I enjoy converting ideas into real life
               products and building solutions that runs on the internet. Over
@@ -86,8 +86,8 @@
                 <p>Each one is unique. Take a look.</p>
               </div>
               <div>
-                <div class="work-container">
-                  <div class="work-image">
+                <div class="work-container hide">
+                  <div class="work-image hide-left">
                     <div>
                       <a href="" class="image-link">
                         <div class="pc-view-cont">
@@ -107,7 +107,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="work-text">
+                  <div class="work-text hide-right">
                     <div class="top-work-text">
                       <p class="number">01</p>
                       <p class="work-title">
@@ -209,6 +209,9 @@
       const line2 = document.querySelector(".line2");
       const line3 = document.querySelector(".line3");
 
+      const leftItem = document.querySelectorAll('.hide-left');
+      const rightItem = document.querySelectorAll('.hide-right');
+
       function showNav() {
         line1.classList.toggle("rotate1");
         line2.classList.toggle("rotate2");
@@ -216,6 +219,31 @@
         nav.classList.toggle("show-nav");
       }
 
+      
+      
+      const animateItems = () => {
+        window.addEventListener('scroll', animateItems);
+        const trigger = window.innerHeight / 5 * 4;
+
+        leftItem.forEach(item => {
+          const itemTop = item.getBoundingClientRect().top;
+          if(itemTop < trigger){
+            item.classList.add('show-item')
+          }else{
+            item.classList.remove('show-item')
+          }
+        })
+
+        rightItem.forEach(item => {
+          const itemTop = item.getBoundingClientRect().top;
+          if(itemTop < trigger){
+            item.classList.add('show-item')
+          }else{
+            item.classList.remove('show-item')
+          }
+        })
+      }
+      animateItems();
       
     </script>
   </body>
