@@ -239,11 +239,16 @@ svg {
   width: 90%;
 }
 
-.mobile-view{
+.mobile-view-cont{
   position: absolute;
-  top: 3rem;
-  left: 30rem;
+  top: 0.7rem;
+  right:0 ;
   height: 100%;
+}
+.mobile-view{
+  height: 100%;
+  position: relative;
+  right:0 ;
 }
 .image {
   width: 100%;
