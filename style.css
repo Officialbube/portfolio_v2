@@ -245,12 +245,13 @@ svg {
   top: 0.7rem;
   right: 0;
   height: 100%;
+  z-index: 3;
 }
 .mobile-view {
   height: 100%;
   position: relative;
   right: 0;
-  z-index: 3;
+  
 }
 .image {
   width: 100%;
