@@ -422,6 +422,9 @@ footer {
   body{
     background-color: red;
   }
+  .mobile-view{
+    left: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -559,10 +562,7 @@ footer {
   }
 }
 @media only screen and (max-width: 1023px) {
-  .mobile-view {
-    top: 1rem;
-    left: 12rem;
-  }
+  
 }
 @media only screen and (max-width: 1023px) {
   .header-container {
