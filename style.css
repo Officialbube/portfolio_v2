@@ -414,19 +414,19 @@ footer {
 .show-nav {
   transform: translateY(-1000%);
 }
-.hide-left{
+.hide-left {
   transform: translateX(-210%);
 }
-.hide-right{
+.hide-right {
   transform: translateX(210%);
 }
-.hide-left, .hide-right{
+.hide-left,
+.hide-right {
   transition: transform 0.9s;
 }
-.show-item{
+.show-item {
   transform: translate(0);
 }
-
 
 @media only screen and (max-width: 400px) {
   .mobile-view {
@@ -438,7 +438,7 @@ footer {
   html,
   body {
     width: 100%;
-    
+    overflow-x: hidden;
   }
   header {
     width: 100%;
