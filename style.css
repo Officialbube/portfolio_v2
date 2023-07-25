@@ -122,6 +122,8 @@ svg {
   height: 34rem;
   text-align: left;
   line-height: 40px;
+  animation: opacity-animation 3s linear infinite;
+  animation-iteration-count: 1;
 }
 .left h1 {
   font-size: 4rem;
@@ -140,6 +142,8 @@ svg {
 }
 .right {
   width: 100%;
+  animation: opacity-animation 9s linear infinite;
+  animation-iteration-count: 1;
 }
 .right img {
   width: 100%;
@@ -584,5 +588,14 @@ footer {
   100%{
     opacity: 1;
 
+  }
+}
+
+@keyframes opacity-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
