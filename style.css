@@ -221,6 +221,9 @@ svg {
   margin-top: 100px;
   display: flex;
 }
+.row-reverse{
+  flex-direction: row-reverse;
+}
 .work-image {
   width: 58.33%;
   position: relative;
